@@ -3,9 +3,9 @@ clone_folder: c:\projects\obs-plugin
 shallow_clone: true
 
 environment:
-    obs_dep_url: https://obsproject.com/downloads/dependencies2017.zip
+    obs_dep_url: "https://obsproject.com/downloads/dependencies2017.zip"
 
 
 install:
     - ps: $wc = New-Object System.Net.WebClient
-    - ps: $wc.DownloadFile({obs_dep_url}, c:\projects\obs-deps)
+    - ps: $wc.DownloadFile({obs_dep_url}, "c:\projects\obs-deps")
